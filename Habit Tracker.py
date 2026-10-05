@@ -2,9 +2,11 @@ def Habit_tracker():
     print("--Welcome to Habit Tracker--")
     Habits = {"Gym": 0, "Coding": 0, "Studying": 0}
     while True:
-        Operation = input("Enter a Habit, You have performed from 'Gym', 'Coding', 'Studying' or leave by pressing 'exit':")
-        if Operation == 'exit':
-            print("You have exited the Habit tracker!")
+       if Operation == 'exit':
+            print("\n--- Final Summary ---")
+            print("Yeh raha tera total score:")
+            print(Habits)
+            print("You have exited the Habit tracker. Keep crushing it! 🚀")
             break
 
         else:
