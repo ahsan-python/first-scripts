@@ -2,7 +2,7 @@ def Habit_tracker():
     print("--Welcome to Habit Tracker--")
     Habits = {"Gym": 0, "Coding": 0, "Studying": 0}
     while True:
-        Operation = input("Enter a Habit, You have performed from 'GYM, Coding, Studying' or leave by pressing 'exit':")
+        Operation = input("Enter a Habit, You have performed from 'Gym', 'Coding', 'Studying' or leave by pressing 'exit':")
         if Operation == 'exit':
             print("You have exited the Habit tracker!")
             break
@@ -18,6 +18,7 @@ def Habit_tracker():
                  Habits["Coding"] += 1
                  print(f"You have written code {Habits['Coding']} time(s).")
                else: 
-                 print("No related habit performed")
+                 print("No habit like this exists except for 'Gym', 'Coding', 'Studying'")
+                continue
 
 Habit_tracker()
