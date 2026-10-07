@@ -9,6 +9,12 @@ def reset_habits(habit_dict):
 def Habit_tracker():
     print("--Welcome to Habit Tracker--")
     Habits = {"Gym": 0, "Coding": 0, "Studying": 0}
+def Show_progress(Habit_dict):
+    """Display all current progress of All habits performed"""
+    print("--current Habit progress--")
+    for habit in habit_dict. item():
+        print(f" {habit}: {count} time(s)")
+        print("---------------------------------\n")
     
     while True:
         Operation = input("Enter a Habit ('Gym, Coding, Studying'), type 'reset' to clear all, or 'exit' to quit: ")
