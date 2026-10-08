@@ -1,4 +1,4 @@
-calorie_intake = 2000
+calorie_intake = int(input("Enter your fixed calories intake you need to eat:"))
 calorie_eaten = 0
 calories_total = int(input("Enter how many calories you have taken:"))
 
@@ -23,3 +23,6 @@ Total_Carbs_consumed = (calories_total * 0.50)/4
 Total_fats_consumed = (calories_total * 0.20)/9
 
 print(f"You have consumed in total of {round(Total_Protein_consumed,2)}g proteins, {round(Total_Carbs_consumed,2)}g of carbs and {round(Total_fats_consumed,2)}g of fats.")
+with open("Calories_per_weekly_average.txt", "r") as file:
+    data = file.read()
+    print("Saved Calories Log:\n", data)
