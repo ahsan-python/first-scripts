@@ -23,6 +23,8 @@ Total_Carbs_consumed = (calories_total * 0.50)/4
 Total_fats_consumed = (calories_total * 0.20)/9
 
 print(f"You have consumed in total of {round(Total_Protein_consumed,2)}g proteins, {round(Total_Carbs_consumed,2)}g of carbs and {round(Total_fats_consumed,2)}g of fats.")
+with open("Calories_per_weekly_avergae.txt","a") as file:
+    file.write(str(calories_total) +"/n")
 with open("Calories_per_weekly_average.txt", "r") as file:
     data = file.read()
     print("Saved Calories Log:\n", data)
