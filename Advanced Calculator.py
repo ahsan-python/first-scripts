@@ -45,17 +45,19 @@ def advance_calculator():
                 print(f"Result: {result}")
         else:
             print("Invalid operation! Please try again.")
-        restart_or_exit = input("Do you want to exit the calculator or contine?. If continue type 'yes' if no then simply type 'exit':")
-        if restart_or_exit == 'exit':
-            print("You have succesfully exited the calculator")
-            break
-        else:
-            print("Invalid statement. you can only choose from exit or yes")
-            continue
-        if restart_or_exit == 'yes':
-            print("Calculate again")
-            continue
-           
+        # Main loop ke end mein:
+while True:
+    restart_or_exit = input("Do you want to continue calculating? Type 'yes' to continue or 'exit' to leave: ").lower().strip()
+    
+    if restart_or_exit == 'exit':
+        print("You have successfully exited the calculator.")
+        break  # Is se yeh inner loop khatam hoga
+    elif restart_or_exit == 'yes':
+        print("Calculate again...\n")
+        break  # Is inner loop se baahar nikal kar outer loop wapis chalega
+    else:
+        print("Invalid input! Please type only 'yes' or 'exit'.")
+        # Yeh continue nahi bhi likho ge toh loop wapis input poochega
      
 
 # Function ko call karna mat bhoolna
