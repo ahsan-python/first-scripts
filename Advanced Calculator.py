@@ -45,9 +45,14 @@ def advance_calculator():
                 print(f"Result: {result}")
         else:
             print("Invalid operation! Please try again.")
-       if restart_or_exit == 'exit':
-    print("You have succesfully exited the calculator")
-    break
+        if restart_or_exit == 'exit':
+            print("You have succesfully exited the calculator")
+            break
+        else:
+            print("Invalid statement. you can only choose from exit or yes")
+            continue
+           
+     
 
 # Function ko call karna mat bhoolna
 advance_calculator()
