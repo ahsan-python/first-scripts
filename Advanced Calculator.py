@@ -51,6 +51,9 @@ def advance_calculator():
         else:
             print("Invalid statement. you can only choose from exit or yes")
             continue
+        if restart_or_exit == 'yes':
+            print("Calculate again")
+            continue
            
      
 
