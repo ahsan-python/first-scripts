@@ -45,6 +45,7 @@ def advance_calculator():
                 print(f"Result: {result}")
         else:
             print("Invalid operation! Please try again.")
+        restart_or_exit = input("Do you want to exit the calculator or contine?. If continue type 'yes' if no then simply type 'exit':")
         if restart_or_exit == 'exit':
             print("You have succesfully exited the calculator")
             break
