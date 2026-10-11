@@ -22,3 +22,33 @@ def advance_calculator():
         except ValueError:
             print("Invalid input! Please enter numbers only.")
             continue
+# 4. Calculation Execution
+        if operation == '+':
+            result = num_1 + num_2
+            print(f"Result: {result}")
+            
+        elif operation == '-':
+            result = num_1 - num_2
+            print(f"Result: {result}")
+            
+        elif operation == '*':
+            result = num_1 * num_2
+            print(f"Result: {result}")
+            
+        elif operation == '/':
+            if num_2 == 0:
+                print("Error: Division by zero is not allowed!")
+            else:
+                result = num_1 / num_2
+                print(f"Result: {result}")
+                
+        elif operation == '**':
+            result = num_1 ** num_2
+            print(f"Result: {result}")
+            
+        elif operation == '%':
+            if num_2 == 0:
+                print("Error: Modulo by zero is not allowed!")
+            else:
+                result = num_1 % num_2
+                print(f"Result: {result}")
