@@ -63,4 +63,4 @@ restart_or_exit = input("\nDo you want to continue calculating? (yes/exit): ").l
         else:
             print("Invalid choice! Restarting calculator...")
             continue
-
+advance_calculator()
