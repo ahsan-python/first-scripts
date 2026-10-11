@@ -52,3 +52,15 @@ def advance_calculator():
             else:
                 result = num_1 % num_2
                 print(f"Result: {result}")
+restart_or_exit = input("\nDo you want to continue calculating? (yes/exit): ").lower().strip()
+
+        if restart_or_exit == 'exit':
+            print("You have successfully exited the calculator.")
+            break
+        elif restart_or_exit == 'yes':
+            print("Calculating again...")
+            continue
+        else:
+            print("Invalid choice! Restarting calculator...")
+            continue
+
