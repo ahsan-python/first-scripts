@@ -27,8 +27,10 @@ def calorie_maintainance():
           (10 * data["Weight"]) + (6.25 * data["Height"]) - (5 * data["Age"]) + 5
       )
       print(f"\nSuccess! Your Basal Metabolic Rate (BMR) is: {bmr:.2f} kcal/day.")
-      break  # Exit loop after successful calculation
 
+      print("--Lets calculate your total intake require for you body according to you daily activities and BMR--")
+
+      
     except ValueError:
       print("Error: Please enter valid numbers only. Try again.\n")
 
