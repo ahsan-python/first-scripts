@@ -29,7 +29,11 @@ def calorie_maintainance():
       print(f"\nSuccess! Your Basal Metabolic Rate (BMR) is: {bmr:.2f} kcal/day.")
 
       print("--Lets calculate your total intake require for you body according to you daily activities and BMR--")
-
+      intensity_rates = {
+    "1": ("Low Intensity", "Walking / Light Stretching", 4.0),
+    "2": ("Moderate Intensity", "PPL Weightlifting / Standard Gym", 6.5),
+    "3": ("High Intensity", "HIIT / Heavy Legs / Sprinting", 9.5)
+}
       
     except ValueError:
       print("Error: Please enter valid numbers only. Try again.\n")
