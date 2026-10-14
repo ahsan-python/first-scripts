@@ -34,6 +34,9 @@ def calorie_maintainance():
     "2": ("Moderate Intensity", "PPL Weightlifting / Standard Gym", 6.5),
     "3": ("High Intensity", "HIIT / Heavy Legs / Sprinting", 9.5)
 }
+      for key, (name, desc, rate) in intensity_rates.items():
+            print(f"[{key}] {name} -> (~{rate} kcal/min) | {desc}")
+            user_choice = input("\nEnter choice (1-3): ")
       
     except ValueError:
       print("Error: Please enter valid numbers only. Try again.\n")
