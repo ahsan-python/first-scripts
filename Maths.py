@@ -14,3 +14,7 @@ def collatz_sequence():
             print(f"Step {steps}: {n}")
             
         print(f"\nFinished! Total steps to reach 1: {steps}")
+        
+    except ValueError:
+        print("Please enter a valid integer!")
+
