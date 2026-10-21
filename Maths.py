@@ -17,4 +17,4 @@ def collatz_sequence():
         
     except ValueError:
         print("Please enter a valid integer!")
-
+collatz_sequence()
