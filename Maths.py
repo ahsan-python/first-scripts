@@ -9,4 +9,8 @@ def collatz_sequence():
                 n = n // 2  # integer division
             else:
                 n = (n * 3) + 1
-       
+            
+            steps += 1
+            print(f"Step {steps}: {n}")
+            
+        print(f"\nFinished! Total steps to reach 1: {steps}")
