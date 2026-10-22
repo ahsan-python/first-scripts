@@ -33,4 +33,8 @@ def two_sum_numbers(numbers,targets):
             return "couldn't find the pair"
 my_list = [2, 7, 11, 15, 18, 21]
 target_number = 26
+result = find_two_sum(my_list, target_number)
+
+print("Target Number:", target_number)
+print("Milne wale Numbers:", result)
 collatz_sequence()
