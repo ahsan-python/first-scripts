@@ -17,4 +17,9 @@ def collatz_sequence():
         
     except ValueError:
         print("Please enter a valid integer!")
+def two_sum_numbers(numbers,targets):
+    left = 0
+    right = len(numbers)-1
+
+
 collatz_sequence()
