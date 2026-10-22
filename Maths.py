@@ -31,5 +31,6 @@ def two_sum_numbers(numbers,targets):
         else:
             right -=1
             return "couldn't find the pair"
-
+my_list = [2, 7, 11, 15, 18, 21]
+target_number = 26
 collatz_sequence()
