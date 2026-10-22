@@ -20,6 +20,16 @@ def collatz_sequence():
 def two_sum_numbers(numbers,targets):
     left = 0
     right = len(numbers)-1
+      while left < right:
+        current_sum = numbers[left] + numbers[right]
 
+        if current_sum == targets:
+            return numbers[left],numbers[right]
+
+        elif current_sum < targets:
+            left +=1
+        else:
+            right -=1
+            return "couldn't find the pair"
 
 collatz_sequence()
