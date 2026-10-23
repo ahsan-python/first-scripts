@@ -24,4 +24,4 @@ def Areas():
       print(f"The total Area of the Triangle = {result}\n")
     else:
       print("Invalid choice! Please type 1, 2, 3, or 'exit'.\n")
-      
+ Areas()     
