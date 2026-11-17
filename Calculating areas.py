@@ -3,7 +3,7 @@ def Areas():
     # Keep input as string first so 'exit' doesn't crash the program
     choice = input(
         "If you want to find area of rectangle type '1', square type '2',"
-        " triangle type '3', or type 'exit' to leave: "
+        " triangle type '3',Cicle type '3' or type 'exit' to leave: "
     )
     if choice.lower() == "exit":
       print("Exiting calculator. See you!")
