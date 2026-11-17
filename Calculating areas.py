@@ -22,6 +22,10 @@ def Areas():
       height = float(input("Enter the Height of the Triangle: "))
       result = 0.5 * base * height  # Fixed the missing '*' operator
       print(f"The total Area of the Triangle = {result}\n")
+    elif
+    
+    
+    
     else:
       print("Invalid choice! Please type 1, 2, 3, or 'exit'.\n")
  Areas()     
