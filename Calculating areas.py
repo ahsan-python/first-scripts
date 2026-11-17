@@ -3,7 +3,7 @@ def Areas():
     # Keep input as string first so 'exit' doesn't crash the program
     choice = input(
         "If you want to find area of rectangle type '1', square type '2',"
-        " triangle type '3',Cicle type '3' or type 'exit' to leave: "
+        " triangle type '3',Cicle type '4' or type 'exit' to leave: "
     )
     if choice.lower() == "exit":
       print("Exiting calculator. See you!")
@@ -22,7 +22,7 @@ def Areas():
       height = float(input("Enter the Height of the Triangle: "))
       result = 0.5 * base * height  # Fixed the missing '*' operator
       print(f"The total Area of the Triangle = {result}\n")
-    elif choice ==
+    elif choice == "4"
     
     
     
