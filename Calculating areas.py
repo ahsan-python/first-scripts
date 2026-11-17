@@ -26,6 +26,7 @@ def Areas():
     elif choice == "4":
       radius = float(input("Enter the radius of the circle:))
       area = math.pie * (radius**2)
+      print(
     
     
     
