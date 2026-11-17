@@ -23,6 +23,7 @@ def Areas():
       result = 0.5 * base * height  # Fixed the missing '*' operator
       print(f"The total Area of the Triangle = {result}\n")
     elif choice == "4":
+      radius = float()
     
     
     
