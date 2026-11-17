@@ -1,3 +1,4 @@
+import math
 def Areas():
   while True:
     # Keep input as string first so 'exit' doesn't crash the program
@@ -24,6 +25,7 @@ def Areas():
       print(f"The total Area of the Triangle = {result}\n")
     elif choice == "4":
       radius = float(input("Enter the radius of the circle:))
+      area = math.pie
     
     
     
